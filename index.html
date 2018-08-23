@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="Go言語, Vue.js, Rails, Ruby, 音楽理論, DTM">
+    <meta name="description" content="">
+    <title>Demi Chords</title>
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="app">
+        <h1>Demi Chords</h1>
+        <nav v-if="isActive">
+          <ul class="globalNav">
+            <a href="#">
+              <li>
+                About
+              </li>
+            </a>
+            <a href="./notes.html">
+              <li>
+                Product
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                Recrute
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                Blog
+              </li>
+            </a>
+          </ul>
+        </nav>
+        <img src="img/menu.svg" @click="isActive = !isActive;" id="menu">
+      </header>
+      <main>
+        <div class="contents">
+          <div class="gridContiner" id="grid">
+            <a href="#">
+              <div class="note">
+                <img src="img/ruby.svg" alt="img" width="80%"><br>
+                記事1
+              </div>
+            </a>
+            <a href="#">
+              <div class="note">
+                <img src="img/rails.svg" alt="img" width="80%"><br>
+                記事1
+              </div>
+            </a>
+            <a href="#">
+              <div class="note">
+                <img src="img/go-logo.png" alt="img" width="80%"><br>
+              </div>
+            </a>
+            <a href="#">
+              <div class="note">
+                <img src="img/html.svg" alt="img" width="80%"><br>
+              </div>
+            </a>
+            <a href="#">
+              <div class="note">
+                <img src="img/css.svg" alt="img" width="80%"><br>
+              </div>
+            </a>
+            <a href="#">
+              <div class="note">
+                <img src="img/js.svg" alt="img" width="80%"><br>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <small>&copy; 2018 Stra.</small>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/page.js"></script>
+    <script src="js/p5.min.js"></script>
+  </body>
+</html>
